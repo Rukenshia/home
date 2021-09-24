@@ -4,6 +4,25 @@
 
 This project provides you with a page that you can use as your "New Tab" or "Home" page in various browsers.
 
+## Table of Contents
+
+- [`home`](#home)
+  - [Table of Contents](#table-of-contents)
+  - [What does this do and how do I use it?](#what-does-this-do-and-how-do-i-use-it)
+  - [Why?](#why)
+  - [Installation](#installation)
+    - [Google Chrome](#google-chrome)
+    - [Non-Chrome browsers](#non-chrome-browsers)
+  - [Customization](#customization)
+    - [Categories](#categories)
+      - [Adding Sub-Categories](#adding-sub-categories)
+      - [Adding Links](#adding-links)
+    - [Link Customization](#link-customization)
+      - [Shortcuts / Special Links](#shortcuts--special-links)
+        - [Input Fields / Quick search](#input-fields--quick-search)
+    - [Themes](#themes)
+    - [Scratchpad](#scratchpad)
+
 ## What does this do and how do I use it?
 
 You can see a short GIF of the page in action [here](./docs/usage.gif).
