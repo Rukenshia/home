@@ -1,0 +1,10 @@
+{
+    "name": "Personal home",
+    "version": "1.0",
+    "description": "",
+    "manifest_version": 2,
+    "permissions": ["tabs"],
+    "background": {
+        "scripts": ["assets/chrome/chrome_startup.js"]
+    }
+}

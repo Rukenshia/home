@@ -1,0 +1,66 @@
+:root {
+    --color-background: #282a36;
+    --color-background-darker: #141925;
+    --color-foreground: #707a8c;
+
+    --color-accent: #ffcc66;
+    --color-white: #f1f1f0;
+
+    --color-blue: #73d0ff;
+    --color-light-blue: #73d0ff;
+    --color-bg-blue: rgba(115, 208, 255, 0.1);
+    --color-bg-light-blue: rgba(115, 208, 255, 0.5);
+
+    --color-green: #bae67e;
+    --color-bg-green: rgba(186, 230, 126, 0.1);
+    --color-bg-light-green: rgba(186, 230, 126, 0.5);
+
+    --color-red: #f28799;
+    --color-bg-red: rgba(242, 135, 153, 0.1);
+    --color-bg-light-red: rgba(242, 135, 153, 0.5);
+
+    --color-yellow: #ffe6b3;
+    --color-bg-yellow: rgba(255, 230, 179, 0.1);
+    --color-bg-light-yellow: rgba(255, 230, 179, 0.5);
+
+    --color-purple: #d4bfff;
+    --color-bg-purple: rgba(212, 191, 255, 0.1);
+    --color-bg-light-purple: rgba(212, 191, 255, 0.5);
+
+    --color-white: #f1f1f0;
+
+    /* set the color for text inside of link hints (letters/numbers) */
+    --color-bg-link-hint: var(--color-background-darker);
+    --color-link-hint: var(--color-foreground);
+    --color-link-hint-focus: var(--color-background);
+    --color-special-link: var(--color-background);
+
+    /* blue column */
+    --color-bg-blue-col: var(--color-bg-blue);
+    --color-bg-blue-link-hint: var(--color-bg-light-blue);
+    --color-bg-blue-special-link: var(--color-blue);
+
+    /* green column */
+    --color-bg-green-col: var(--color-bg-green);
+    --color-bg-green-link-hint: var(--color-bg-light-green);
+    --color-bg-green-special-link: var(--color-green);
+
+    /* red column */
+    --color-bg-red-col: var(--color-bg-red);
+    --color-bg-red-link-hint: var(--color-bg-light-red);
+    --color-bg-red-special-link: var(--color-red);
+
+    /* purple column */
+    --color-bg-purple-col: var(--color-bg-purple);
+    --color-bg-purple-link-hint: var(--color-bg-light-purple);
+    --color-bg-purple-special-link: var(--color-purple);
+
+    /* yellow column */
+    --color-bg-yellow-col: var(--color-bg-yellow);
+    --color-bg-yellow-link-hint: var(--color-bg-light-yellow);
+    --color-bg-yellow-special-link: var(--color-yellow);
+
+    /* scratchpad and other utilites */
+    --color-bg-scratchpad: var(--color-background-darker);
+    --color-bg-input: var(--color-background-darker);
+}

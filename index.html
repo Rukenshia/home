@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>~/</title>
+  <meta name="description" content="Personal home page" />
+  <meta name="author" content="Jan 'Rukenshia' C." />
+
+  <link rel="stylesheet" href="assets/css/theme.ayu.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./assets/vendor/simplemde.min.css" />
+  <script src="./assets/vendor/simplemde.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="accent">
+      ~/<span id="shell"></span><span id="cursor"></span>
+    </h1>
+
+    <div id="categories" class="row">
+      <div class="col red">
+        <div class="category">
+          <h2>work</h2>
+        </div>
+
+        <h3 class="light subtitle">ops</h3>
+        <ul>
+          <li data-trigger="A">
+            <a href="https://eu-central-1.console.aws.amazon.com">aws login</a>
+          </li>
+          <li>
+            <a href="https://appsignal.com">appsignal</a>
+          </li>
+          <li>
+            <a href="https://pagerduty.com">pagerduty</a>
+          </li>
+        </ul>
+
+        <h3 class="light subtitle">dev</h3>
+        <ul>
+          <li>
+            <a href="https://github.com/notifications">github</a>
+          </li>
+          <li>
+            <a href="https://concourse-ci.org">ci/cd</a>
+          </li>
+        </ul>
+
+        <h3 class="light subtitle">search github</h3>
+        <div class="only-special">
+          <input data-trigger="G" data-query="https://github.com/search?q={query}" type="text" placeholder="query" />
+        </div>
+
+        <h3 class="light subtitle">org</h3>
+        <ul>
+          <li>
+            <a href="https://www.atlassian.com/software/jira">jira backlog</a>
+          </li>
+          <li>
+            <a href="https://portal.office.com">m365</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col blue">
+        <div class="category">
+          <h2>personal</h2>
+        </div>
+
+        <h3 class="light subtitle">news</h3>
+        <ul>
+          <li data-trigger="H"><a href="https://news.ycombinator.com">hacker news</a></li>
+        </ul>
+
+        <h3 class="light subtitle">entertainment</h3>
+        <ul>
+          <li data-trigger="N"><a href="https://netflix.com">netflix</a></li>
+          <li>
+            <a href="https://www.amazon.com/Amazon-Video/b/?node=3010075031&ref=atv_surl_aiv">prime video</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col green">
+        <div class="category">
+          <h2>side projects</h2>
+        </div>
+
+        <h3 class="light subtitle">ops</h3>
+        <ul>
+          <li><a href="https://sentry.io">sentry</a></li>
+          <li><a
+              href="https://eu-central-1.console.aws.amazon.com/cloudwatch/home?region=eu-central-1#logsV2:log-groups">cloudwatch
+              logs</a></li>
+        </ul>
+
+        <h3 class="light subtitle">dev</h3>
+        <ul>
+          <li data-trigger="P"><a href="https://myaccount.signin.aws.amazon.com/console">personal aws</a></li>
+          <li><a href="https://tailwindcss.com">tailwind docs</a></li>
+          <li><a href="https://notion.so">notion</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row left-aligned">
+      <div class="col full-width">
+        <h1 class="light">
+          <span class="scratchpad-hint white">S</span>cratchpad
+        </h1>
+        <textarea id="scratchpad" class="scratchpad"> </textarea>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/shell.js"></script>
+  <script src="./assets/js/scratchpad.js"></script>
+  <script src="./assets/js/categories.js"></script>
+  <script src="./assets/js/input_fields.js"></script>
+</body>
+
+</html>
