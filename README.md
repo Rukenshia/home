@@ -190,7 +190,7 @@ Press the `Return` key to submit the search.
 
 ### Themes
 
-You can customize the colors of this page by adding a theme. Please check out [`theme.snazzy.css`](assets/css/theme.snazzy.css) as an example. The theme can be switched at the
+You can customize the colors of this page by adding a theme. Please check out [`theme.ayu.css`](assets/css/theme.ayu.css) as an example. The theme can be switched at the
 top of your `index.private.html`
 
 ### Scratchpad
