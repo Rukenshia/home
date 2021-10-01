@@ -50,10 +50,8 @@ Mostly frustration. There are some really cool "new tab" pages out there, focuse
 But what I really wanted was a keyboard-driven experience to quickly go places. At some point, I realized that I always have some sort of
 note taking app open for quick notes, so the scratchpad was added.
 
-Whenever I shared my screen in meetings and used that page, people started asking where I got it from and they expressed their interest -
-that's why I'm making this open source. Please note that this really started as a tiny and personal home page and was never intended
-"for the masses". You'll find shortcuts taken and bad design everywhere. I'm happy to take PRs to improve this page, but please also note
-that I do not want to bloat this little project too much by adding various functionalities (which definitely have their valid use-case!) to it.
+People started asking me about this page whenever I shared my screen, so I decided to make it open source.
+Since this started as a tiny side project, please don't expect the highest quality repositories :)
 
 ## Installation
 
@@ -149,6 +147,7 @@ The `data-trigger` attribute can be used to immediately open a link:
 
         <h3 class="light subtitle">ops</h3>
         <ul>
+-          <li>
 +          <li data-trigger="A">
             <a href="https://eu-central-1.console.aws.amazon.com">aws login</a>
           </li>
@@ -190,7 +189,7 @@ Press the `Return` key to submit the search.
 
 ### Themes
 
-You can customize the colors of this page by adding a theme. Please check out [`theme.snazzy.css`](assets/css/theme.snazzy.css) as an example. The theme can be switched at the
+You can customize the colors of this page by adding a theme. Please check out [`theme.ayu.css`](assets/css/theme.ayu.css) as an example. The theme can be switched at the
 top of your `index.private.html`
 
 ### Scratchpad
