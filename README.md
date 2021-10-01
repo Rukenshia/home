@@ -51,7 +51,7 @@ But what I really wanted was a keyboard-driven experience to quickly go places. 
 note taking app open for quick notes, so the scratchpad was added.
 
 People started asking me about this page whenever I shared my screen, so I decided to make it open source.
-Since this started as a tiny side project, please don't expect the highest quality repositories :)
+Since this started as a tiny side project, please don't expect the highest quality code :)
 
 ## Installation
 
