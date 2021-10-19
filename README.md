@@ -198,4 +198,4 @@ This project uses the great [SimpleMDE](https://simplemde.com) editor to provide
 up caches**. This also means that your notes are not shared between browsers or in incognito mode.
 
 There is some additional functionality found in [scratchpad.js](./assets/js/scratchpad.js) that adds a "open link" annotation to the right of the scratchpad. If you don't want this, you can disable
-it by removing the `setInterval/setTimeout` calls at the bottom of that file.
+it by changing the toggle at the top of the file.

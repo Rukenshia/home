@@ -1,5 +1,9 @@
 'use strict';
 
+// Toggle whether you want to see links rendered as a clickable <a> tag on the right side
+// of the scratchpad
+const ENABLE_SCRATCHPAD_LINKS = true;
+
 /**
  * Highlight all links in the CodeMirror editor
  *
@@ -12,7 +16,7 @@
  * itself clickable without many hacks, because as soon as you
  * click on the link the line gets re-rendered, meaning your
  * old event handlers won't be registered anymore.
- * 
+ *
  * There is a way to extend CodeMirror, but it just looked like too much
  * effort to learn, this works for now albeit not being great.
  */
@@ -83,20 +87,22 @@ const simplemde = new window.SimpleMDE({
 // Disable "Tab" so we can get out of the editor
 simplemde.codemirror.options.extraKeys.Tab = false;
 
-// We need to call highlightLinks in an interval to work
-// around CodeMirror re-rendering its DOM.
-//
-// For more info: Whenever the cursor changes in CodeMirror,
-// the line it falls on gets re-rendered all the time.
-// If we are now in a line that contains a markdown link, this
-// line will be re-rendered. We attach our link element as a child
-// of the CodeMirror-line, so our element will be gone when
-// CodeMirror re-renders this line. The interval will make the link
-// re-appear within the given time.
-//
-// Is this great performance-wise? Absolutely not. Does it work
-// for now? yeah.
-setInterval(highlightLinks, 1000);
+if (ENABLE_SCRATCHPAD_LINKS) {
+  // We need to call highlightLinks in an interval to work
+  // around CodeMirror re-rendering its DOM.
+  //
+  // For more info: Whenever the cursor changes in CodeMirror,
+  // the line it falls on gets re-rendered all the time.
+  // If we are now in a line that contains a markdown link, this
+  // line will be re-rendered. We attach our link element as a child
+  // of the CodeMirror-line, so our element will be gone when
+  // CodeMirror re-renders this line. The interval will make the link
+  // re-appear within the given time.
+  //
+  // Is this great performance-wise? Absolutely not. Does it work
+  // for now? yeah.
+  setInterval(highlightLinks, 1000);
 
-// Hack to wait for simplemde to be initialised
-setTimeout(highlightLinks, 100);
+  // Hack to wait for simplemde to be initialised
+  setTimeout(highlightLinks, 100);
+}
